@@ -1,0 +1,67 @@
+body {
+    padding: 2%;
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(236, 243, 197);
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h5 {
+    font-size: 100px;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.container {
+    text-align: center;
+    border-width: 10px;
+    border-style: double;
+    border-color: grey;
+    background-color: white;
+}
+.row {
+    font-size: 12px;
+}
+
+body {
+    padding: 2%;
+}
+
+.jumbotron {
+    font-family: 'Alata', sans-serif;
+    background-image: url('https://i.pinimg.com/564x/73/ea/9c/73ea9c22beb42648c951922c1584847a.jpg');
+
+}
+
+.col {
+    padding: 0;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+}
+
+img {
+    max-width: 300px;
+    float: right;
+    
+}
+
+span {
+    width: 70px;
+}
+
+#carouselIndicators {
+    color: black;
+}
