@@ -100,6 +100,7 @@ var currentDate = new Date().toLocaleDateString('en-US', {timeZoneName: 'short'}
 
 var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var currentDay = weekdays[new Date().getDay()];
+var currentDayString = JSON.stringify(currentDay);
 
-if (currentDay )
+if (currentDayString)
 console.log(currentDay);
