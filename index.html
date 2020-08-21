@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kitties and Quotes Weekly Planner</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
 
@@ -18,79 +19,144 @@
 <body>
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselIndicators" class="carousel slide" data-interval= "false" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselIndicators" data-slide-to="6"></li>
 
         </ol>
         <!--Carousel Start-->
         <div class="carousel-inner">
-        <!--Monday (ACTIVE)-->
-          <div class="carousel-item active">
+
+          <!--Sunday (ACTIVE)-->
+        <div class="carousel-item active">
+          <div class="card">
+              <img src="..." class="card-img-bottom" alt="daily cat image">
+              <div class="card-body">
+                <h5 class="card-title">Sunday</h5>
+                <p class="card-text">
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-9" class="input-group-text">9 AM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-10" class="input-group-text">10 AM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-11" class="input-group-text">11 AM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-12" class="input-group-text">12 PM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-1" class="input-group-text">1 PM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-2" class="input-group-text">2 PM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-3" class="input-group-text">3 PM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-4" class="input-group-text">4 PM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span id="sunday-5" class="input-group-text">5 PM</span>
+                      </div>
+                      <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+              </div>
+            </div>
+        </div>
+        <!--Monday-->
+          <div class="carousel-item">
             <div class="card">
                 <div class="row">
-                    <img src="https://i.pinimg.com/474x/a5/89/9b/a5899b48fff521ffb0a588b5ac75b2ad.jpg">  
-                    <h5>Monday</h5>
+                  <img src="..." class="card-img-bottom" alt="daily cat image">
+                       <h5>Monday</h5>
                 </div>
                  <div class="card-body">
                   <p class="card-text">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">9 AM</span>
+                          <span id="monday-9" class="input-group-text">9 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">10 AM</span>
+                          <span id="monday-10" class="input-group-text">10 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">11 AM</span>
+                          <span id="monday-11" class="input-group-text">11 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">12 PM</span>
+                          <span id="monday-12" class="input-group-text">12 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">1 PM</span>
+                          <span id="monday-1" class="input-group-text">1 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">2 PM</span>
+                          <span id="monday-2" class="input-group-text">2 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">3 PM</span>
+                          <span id="monday-3" class="input-group-text">3 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">4 PM</span>
+                          <span id="monday-4" class="input-group-text">4 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">5 PM</span>
+                          <span id="monday-5" class="input-group-text">5 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
@@ -107,55 +173,55 @@
                   <p class="card-text">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">9 AM</span>
+                          <span id="tuesday-9" class="input-group-text">9 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">10 AM</span>
+                          <span id="tuesday-10" class="input-group-text">10 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">11 AM</span>
+                          <span id="tuesday-11" class="input-group-text">11 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">12 PM</span>
+                          <span id="tuesday-12" class="input-group-text">12 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">1 PM</span>
+                          <span id="tuesday-1" class="input-group-text">1 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">2 PM</span>
+                          <span id="tuesday-2" class="input-group-text">2 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">3 PM</span>
+                          <span id="tuesday-3" class="input-group-text">3 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">4 PM</span>
+                          <span id="tuesday-4" class="input-group-text">4 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">5 PM</span>
+                          <span id="tuesday-5" class="input-group-text">5 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
@@ -172,55 +238,55 @@
                   <p class="card-text">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">9 AM</span>
+                          <span id="wedenesday-9" class="input-group-text">9 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">10 AM</span>
+                          <span id="wedenesday-10" class="input-group-text">10 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">11 AM</span>
+                          <span id="wedenesday-12" class="input-group-text">11 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">12 PM</span>
+                          <span id="wedenesday-12" class="input-group-text">12 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">1 PM</span>
+                          <span id="wedenesday-1" class="input-group-text">1 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">2 PM</span>
+                          <span id="wedenesday-2" class="input-group-text">2 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">3 PM</span>
+                          <span id="wedenesday-3" class="input-group-text">3 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">4 PM</span>
+                          <span id="wedenesday-4" class="input-group-text">4 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">5 PM</span>
+                          <span id="wedenesday-5" class="input-group-text">5 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
@@ -239,55 +305,55 @@
                   <p class="card-text">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">9 AM</span>
+                          <span id="thursday-9" class="input-group-text">9 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">10 AM</span>
+                          <span id="thursday-10" class="input-group-text">10 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">11 AM</span>
+                          <span id="thursday-11" class="input-group-text">11 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">12 PM</span>
+                          <span id="thursday-12" class="input-group-text">12 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">1 PM</span>
+                          <span id="thursday-1" class="input-group-text">1 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">2 PM</span>
+                          <span id="thursday-2" class="input-group-text">2 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">3 PM</span>
+                          <span id="thursday-3" class="input-group-text">3 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">4 PM</span>
+                          <span id="thursday-4" class="input-group-text">4 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">5 PM</span>
+                          <span id="thursday-5" class="input-group-text">5 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
@@ -305,55 +371,55 @@
                   <p class="card-text">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">9 AM</span>
+                          <span id="friday-9" class="input-group-text">9 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">10 AM</span>
+                          <span id="friday-10" class="input-group-text">10 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">11 AM</span>
+                          <span id="friday-11" class="input-group-text">11 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">12 PM</span>
+                          <span id="friday-12" class="input-group-text">12 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">1 PM</span>
+                          <span id="friday-1" class="input-group-text">1 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">2 PM</span>
+                          <span id="friday-2" class="input-group-text">2 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">3 PM</span>
+                          <span id="friday-3" class="input-group-text">3 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">4 PM</span>
+                          <span id="friday-4" class="input-group-text">4 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">5 PM</span>
+                          <span id="friday-5" class="input-group-text">5 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
@@ -371,55 +437,55 @@
                   <p class="card-text">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">9 AM</span>
+                          <span id="saturday-9" class="input-group-text">9 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">10 AM</span>
+                          <span id="saturday-10" class="input-group-text">10 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">11 AM</span>
+                          <span id="saturday-11" class="input-group-text">11 AM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">12 PM</span>
+                          <span id="saturday-12" class="input-group-text">12 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">1 PM</span>
+                          <span id="saturday-1" class="input-group-text">1 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">2 PM</span>
+                          <span id="saturday-2" class="input-group-text">2 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">3 PM</span>
+                          <span id="saturday-3" class="input-group-text">3 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">4 PM</span>
+                          <span id="saturday-4" class="input-group-text">4 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
                       <div class="input-group">
                         <div class="input-group-prepend">
-                          <span class="input-group-text">5 PM</span>
+                          <span id="saturday-5" class="input-group-text">5 PM</span>
                         </div>
                         <textarea class="form-control" aria-label="With textarea"></textarea>
                       </div>
@@ -428,81 +494,18 @@
           </div>
         
 
-        <!--Sunday-->
-        <div class="carousel-item">
-            <div class="card">
-                <img src="..." class="card-img-bottom" alt="daily cat image">
-                <div class="card-body">
-                  <h5 class="card-title">Sunday</h5>
-                  <p class="card-text">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">9 AM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">10 AM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">11 AM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">12 PM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">1 PM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">2 PM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">3 PM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">4 PM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">5 PM</span>
-                        </div>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                      </div>
-                </div>
-              </div>
-          </div>
+        
         </div>
 
 
 
 
 
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -520,6 +523,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="script.js"></script>
     
 
