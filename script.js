@@ -1,4 +1,20 @@
+var sundayObj = {
+    heading:$('#sunday'),
+    nine:$('#sunday-9'),
+    ten:$('#sunday-10'),
+    eleven:$('#sunday-11'),
+    twelve:$('#sunday-12'),
+    one:$('#sunday-1'),
+    two:$('#sunday-2'),
+    three:$('#sunday-3'),
+    four:$('#sunday-5'),
+    five:$('#sunday-6'),
+    quote:$('#sunday-quote'),
+    cat:$('#sunday-cat'),
+}
+
 var mondayObj = {
+    heading:$('#monday'),
     nine:$('#monday-9'),
     ten:$('#monday-10'),
     eleven:$('#monday-11'),
@@ -13,6 +29,7 @@ var mondayObj = {
 }
 
 var tuesdayObj = {
+    heading:$('#tuesday'),
     nine:$('#tuesday-9'),
     ten:$('#tuesday-10'),
     eleven:$('#tuesday-11'),
@@ -27,6 +44,7 @@ var tuesdayObj = {
 }
 
 var wednesdayObj = {
+    heading:$('#wednesday'),
     nine:$('#wednesday-9'),
     ten:$('#wednesday-10'),
     eleven:$('#wednesday-11'),
@@ -41,6 +59,7 @@ var wednesdayObj = {
 }
 
 var thursdayObj = {
+    heading:$('#thursday'),
     nine:$('#thursday-9'),
     ten:$('#thursday-10'),
     eleven:$('#thursday-11'),
@@ -55,6 +74,7 @@ var thursdayObj = {
 }
 
 var fridayObj = {
+    heading:$('#friday'),
     nine:$('#friday-9'),
     ten:$('#friday-10'),
     eleven:$('#friday-11'),
@@ -69,6 +89,7 @@ var fridayObj = {
 }
 
 var saturdayObj = {
+    heading:$('#saturday'),
     nine:$('#saturday-9'),
     ten:$('#saturday-10'),
     eleven:$('#saturday-11'),
@@ -82,25 +103,12 @@ var saturdayObj = {
     cat:$('#saturday-cat'),
 }
 
-var sundayObj = {
-    nine:$('#sunday-9'),
-    ten:$('#sunday-10'),
-    eleven:$('#sunday-11'),
-    twelve:$('#sunday-12'),
-    one:$('#sunday-1'),
-    two:$('#sunday-2'),
-    three:$('#sunday-3'),
-    four:$('#sunday-5'),
-    five:$('#sunday-6'),
-    quote:$('#sunday-quote'),
-    cat:$('#sunday-cat'),
-}
-
 var currentDate = new Date().toLocaleDateString('en-US', {timeZoneName: 'short'})
 
 var weekdays = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var currentDay = weekdays[new Date().getDay()];
 var currentDayString = JSON.stringify(currentDay);
 
-if (currentDayString)
-console.log(currentDay);
+$('.active').removeClass('active');
+$('[data-day="' + currentDay + '"]').addClass('active');
+
