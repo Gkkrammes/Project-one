@@ -36,7 +36,7 @@
           <!--Sunday (ACTIVE)-->
         <div class="carousel-item active" data-day='Sunday'>
           <div class="card">
-              <img src="..." class="card-img-bottom" alt="daily cat image">
+              <img src="..." id='sunday-cat' class="card-img-bottom" alt="daily cat image">
               <div class="card-body">
                 <h5 id="sunday" class="card-title">Sunday</h5>
                 <p class="card-text">
@@ -70,7 +70,7 @@
                       </div>
                       <textarea class="form-control" aria-label="With textarea"></textarea>
                     </div>
-                    <div cid="sunday-2" lass="input-group">
+                    <div id="sunday-2" class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text">2 PM</span>
                       </div>
@@ -101,7 +101,7 @@
           <div class="carousel-item" data-day='Monday'>
             <div class="card">
                 <div class="row">
-                  <img src="..." class="card-img-bottom" alt="daily cat image">
+                  <img src="..." id='monday-cat' class="card-img-bottom" alt="daily cat image">
                        <h5 id="monday" class="card-title">Monday</h5>
                 </div>
                  <div class="card-body">
@@ -167,7 +167,7 @@
         <!--Tuesday-->
           <div class="carousel-item" data-day='Tuesday'>
             <div class="card">
-                <img src="..." class="card-img-bottom" alt="daily cat image">
+                <img src="..." id='tuesday-cat' class="card-img-bottom" alt="daily cat image">
                 <div class="card-body">
                   <h5 id="tuesday" class="card-title">Tuesday</h5>
                   <p class="card-text">
@@ -232,7 +232,7 @@
         <!--Wednesday-->
           <div class="carousel-item" data-day='Wednesday'>
             <div class="card">
-                <img src="..." class="card-img-bottom" alt="daily cat image">
+                <img src="..." id='wednesday-cat' class="card-img-bottom" alt="daily cat image">
                 <div class="card-body">
                   <h5 id="wednesday" class="card-title">Wednesday</h5>
                   <p class="card-text">
@@ -299,7 +299,7 @@
 
         <div class="carousel-item" data-day='Thursday'>
             <div class="card">
-                <img src="..." class="card-img-bottom" alt="daily cat image">
+                <img src="..." id='thursday-cat' class="card-img-bottom" alt="daily cat image">
                 <div class="card-body">
                   <h5 id="thurday" class="card-title">Thursday</h5>
                   <p class="card-text">
@@ -365,7 +365,7 @@
         <!--Friday-->
         <div class="carousel-item" data-day='Friday'>
             <div class="card">
-                <img src="..." class="card-img-bottom" alt="daily cat image">
+                <img src="..." id='friday-cat' class="card-img-bottom" alt="daily cat image">
                 <div class="card-body">
                   <h5 id="friday" class="card-title">Friday</h5>
                   <p class="card-text">
@@ -431,7 +431,7 @@
         <!--Saturday-->
         <div class="carousel-item" data-day='Saturday'>
             <div class="card">
-                <img src="..." class="card-img-bottom" alt="daily cat image">
+                <img src="..." id='saturday-cat' class="card-img-bottom" alt="daily cat image">
                 <div class="card-body">
                   <h5 id="saturday" class="card-title">Saturday</h5>
                   <p class="card-text">
@@ -520,11 +520,33 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="script.js"></script>
+<script>
+  
+    // Performing an AJAX GET request to our queryURL
+    var queryURL ="https://api.thecatapi.com/v1/images/search?api_key=7c97bb69-813a-4c25-9242-4abf20df2336"
+    $.ajax({
+      url: queryURL,
+      method: "GET"
+    })
+  
+    // After the data from the AJAX request comes back
+       .then(function(response) {
+         console.log(response)
+
+    // Saving the image_original_url property
+       var imageUrl = response[0].url;
+       console.log(imageUrl)
+
+    // Setting the catImage src attribute to imageUrl
+    $('#sunday-cat').attr("src", imageUrl);
+       });
+
+</script>
     
 
 

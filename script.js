@@ -112,3 +112,4 @@ var currentDayString = JSON.stringify(currentDay);
 $('.active').removeClass('active');
 $('[data-day="' + currentDay + '"]').addClass('active');
 
+
