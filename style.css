@@ -4,18 +4,20 @@ body {
     background-color: rgb(236, 243, 197);
 }
 
+
+
 h1 {
-    font-size: 25px;
+    font-size: 6vw;
 }
 
-h2, h3 {
-    text-align: center;
+.lead {
+    font-size: 3vw;
 }
 
 h5 {
-    font-size: 100px;
-    padding-left: 20%;
+    font-size: 5vw;
     padding-top: 10%;
+    text-align: center;
 }
 
 .container {
@@ -26,7 +28,7 @@ h5 {
     background-color: white;
 }
 .row {
-    font-size: 12px;
+    font-size: 1vw;
 }
 
 body {
@@ -46,11 +48,10 @@ body {
 .card {
     width: 100%;
     padding: 20px;
+    
 }
 
-textarea {
-    width: 100%;
-}
+
 
 img {
     max-width: 300px;
@@ -62,30 +63,42 @@ span {
     width: 70px;
 }
 
-#carouselIndicators {
-    color: black;
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    width: 45px;
+    height: 20px;
+    border-radius: 0;
+    border: solid 1px black;
+    background: white;
+    text-indent: 0;
+    text-align: center;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 60px;
-  width: 60px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 5px solid black;
-  background-image: none;
-}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    position: relative;
+    top: -260px;
+}  
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: px;
+.carousel-control-next-icon:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f0a4';
+  font-size: 8vw;
   color: rgb(5, 4, 4);
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 30px;
-  color: rgb(0, 0, 0);
+  
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f0a5';
+    font-size: 8vw;
+    color: rgb(5, 4, 4);
+}
+
+.fas {
+    position: relative;
+    top: -260px;
+    color: black;
+    font-size: 8vw;
 }
