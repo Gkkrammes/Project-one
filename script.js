@@ -21,12 +21,13 @@ $('textarea').on('keyup', function() {
     localStorage.setItem('hourBlocks', JSON.stringify(hourBlocks));
 })
 
-$('textarea').each(function() {
-    var hourBlocks = JSON.parse(localStorage.getItem('hourBlocks'));
+var currentHourBlocks = JSON.parse(localStorage.getItem('hourBlocks'));
 
-    $(this).val(hourBlocks[$(this).parent().attr('id')]);
-})
-
+if (currentHourBlocks !== null) {
+    $('textarea').each(function() {
+        $(this).val(currentHourBlocks[$(this).parent().attr('id')]);
+    });
+}
 
 // Imperfect way to clear images/quotes every Sunday. Only works if site is loaded on Sunday at 8.
 if (currentDay == 'Sunday') {
@@ -41,12 +42,12 @@ if (currentDay == 'Sunday') {
 
 var queryURL = "https://api.thecatapi.com/v1/images/search?limit=7&api_key=7c97bb69-813a-4c25-9242-4abf20df2336";
 
+// have API calls update object; have object figure out date; local storage is array of objects, which date is a property is; compare date property in local storage with today's date
+
 $.ajax({
   url: queryURL,
   method: "GET"
-})
-  
-  .then(function(response) {
+}).then(function(response) {
     console.log(response);
 
     for (var i = 0; i < response.length; i++) {
@@ -62,8 +63,7 @@ var queryURL = 'https://cat-fact.herokuapp.com/facts';
 $.ajax({
     url: queryURL,
     method:'GET'
-})
-    .then(function(response) {
+}).then(function(response) {
         console.log(response);
 
         for (var i = 0; i < 7; i++) {
