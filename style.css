@@ -58,3 +58,19 @@ img {
     border-style: solid;
     border-color: black;
 }
+
+span {
+    width: 70px;
+}
+
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    width: 45px;
+    height: 20px;
+    border-radius: 0;
+    border: solid 1px black;
+    background: white;
+    text-indent: 0;
+    text-align: center;
+}
+
