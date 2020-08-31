@@ -1,5 +1,5 @@
 *IMPORTANT*
-We have realised, since submitting our project, the cat fact API is no longer running. We are not aware of whether or not it will be running again when our assignment is graded or if it is permanently shut down. Please contact our instructor if you have any questions. 
+We have realized, since submitting our project, the cat fact API is no longer running. We are not aware of whether or not it will be running again when our assignment is graded or if it is permanently shut down. Please contact our instructor if you have any questions. 
 
 https://gkkrammes.github.io/Project-one/
 
